@@ -4,12 +4,23 @@
 	],
 
 	"js": [
-		"node_modules/jquery/dist/jquery.js",
-		"node_modules/swiper/js/swiper.js",
-		"node_modules/lazysizes/lazysizes.js"
+		"vendors/js/html5.js",
+		"vendors/js/jquery-3.3.1.min.js",
+		"vendors/js/jquery-animate-css-rotate-scale.min.js",
+		"vendors/js/jquery-ui.min.js",
+		"vendors/js/jquery.bxslider.js",
+		"vendors/js/jquery.easing.1.4.1.min.js",
+		"vendors/js/jquery.flexslider.min.js",
+		"vendors/js/jquery.menu-aim.min.js",
+		"vendors/js/jquery.ui.touch-punch.min.js",
+		"vendors/js/zcommon.min.js"
 	],
 
 	"css": [
-		"node_modules/swiper/css/swiper.css"
+		"vendors/css/flexslider.css",
+		"vendors/css/grid.css",
+		"vendors/css/style.css",
+		"vendors/css/styleConceptd.css",
+		"vendors/css/acer-font-435.css"
 	]
 }

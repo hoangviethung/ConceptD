@@ -1,0 +1,26 @@
+extends _templates/_layout/_layout.pug
+
+block var
+	- let title = 'Story | Brand | ConceptD Việt Nam';
+	- let bodyClass = 'brand-story-page';
+
+block loading
+block banner,breadcrumb
+block main
+	.newStyle
+		.row.container.max-width-e
+			// SECTION 1
+			include _templates/brand-story/b-1
+			// SECTION 2
+			include _templates/brand-story/b-2
+			// SECTION 3
+			include _templates/brand-story/b-3
+			// SECTION 4
+			include _templates/brand-story/b-4
+			// SECTION 5
+			include _templates/brand-story/b-5
+			// SECTION 6
+			include _templates/brand-story/b-6
+			// SECTION 7
+			include _templates/brand-story/b-7
+block scripts

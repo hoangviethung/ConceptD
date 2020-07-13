@@ -1,0 +1,162 @@
+extends _templates/_layout/_layout.pug
+
+block var
+	- let title = 'Page | Product 1';
+	- let bodyClass = 'product-1-page';
+
+block loading
+block banner,breadcrumb
+block main
+	include _templates/d9pro/d-1
+block scripts
+	script.
+		var ksp2col1title = document.getElementById("ksp2col1p").previousSibling.previousSibling.previousSibling;
+		var ksp2col2title = document.getElementById("ksp2col2p").previousSibling.previousSibling.previousSibling;
+		var ksp2col3title = document.getElementById("ksp2col3p").previousSibling.previousSibling.previousSibling;
+		var ksp2col1p = document.getElementById("ksp2col1p").previousSibling;
+		var ksp2col2p = document.getElementById("ksp2col2p").previousSibling;
+		var ksp2col3p = document.getElementById("ksp2col3p").previousSibling;
+		var ksp2col1titleheight = ksp2col1title.clientHeight;
+		var ksp2col2titleheight = ksp2col2title.clientHeight;
+		var ksp2col3titleheight = ksp2col3title.clientHeight;
+		var ksp2col1pheight = ksp2col1p.clientHeight;
+		var ksp2col2pheight = ksp2col2p.clientHeight;
+		var ksp2col3pheight = ksp2col3p.clientHeight;
+		function greatestof(number1, number2, number3) {
+		var greater;
+		var greatest;
+		if (number1 > number2) {
+			greater = number1;
+		} else {
+			greater = number2;
+		}
+		if (greater > number3) {
+			greatest = greater;
+		} else {
+			greatest = number3;
+		}
+		return greatest;
+		}
+		function initialksp2() {
+			if(ksp2col1title){
+				ksp2col1title.style.height = "auto";
+			}
+			if(ksp2col2title){
+				ksp2col2title.style.height = "auto";
+			}
+			if(ksp2col3title){
+				ksp2col3title.style.height = "auto";
+			}
+			ksp2col1p.style.height = "auto";
+			ksp2col2p.style.height = "auto";
+			ksp2col3p.style.height = "auto";
+		}
+		var ksp2titleheight, ksp2pheight;
+		function getheightksp2() {
+		ksp2titleheight = greatestof(
+			ksp2col1title.clientHeight,
+			ksp2col2title.clientHeight,
+			ksp2col3title.clientHeight
+		);
+		ksp2pheight = greatestof(
+			ksp2col1p.clientHeight,
+			ksp2col2p.clientHeight,
+			ksp2col3p.clientHeight
+		);
+		}
+		function adjustheightksp2() {
+		ksp2col1title.style.height = ksp2titleheight + "px";
+		ksp2col2title.style.height = ksp2titleheight + "px";
+		ksp2col3title.style.height = ksp2titleheight + "px";
+		ksp2col1p.style.height = ksp2pheight + "px";
+		ksp2col2p.style.height = ksp2pheight + "px";
+		ksp2col3p.style.height = ksp2pheight + "px";
+		}
+		initialksp2();
+		if (document.documentElement.clientWidth > 768) {
+		getheightksp2();
+		adjustheightksp2();
+		}
+		window.onresize = function () {
+		if (document.documentElement.clientWidth > 768) {
+			initialksp2();
+			getheightksp2();
+			adjustheightksp2();
+		} else {
+			initialksp2();
+		}
+		};
+
+		var ksp4col1title = document.getElementById("ksp4col1p").previousSibling
+		.previousSibling.previousSibling;
+		var ksp4col2title = document.getElementById("ksp4col2p").previousSibling
+		.previousSibling.previousSibling;
+		var ksp4col3title = document.getElementById("ksp4col3p").previousSibling
+		.previousSibling.previousSibling;
+		var ksp4col1p = document.getElementById("ksp4col1p").previousSibling;
+		var ksp4col2p = document.getElementById("ksp4col2p").previousSibling;
+		var ksp4col3p = document.getElementById("ksp4col3p").previousSibling;
+		var ksp4col1titleheight = ksp4col1title.clientHeight;
+		var ksp4col2titleheight = ksp4col2title.clientHeight;
+		var ksp4col3titleheight = ksp4col3title.clientHeight;
+		var ksp4col1pheight = ksp4col1p.clientHeight;
+		var ksp4col2pheight = ksp4col2p.clientHeight;
+		var ksp4col3pheight = ksp4col3p.clientHeight;
+		function greatestof2(number1, number2, number3) {
+		var greater;
+		var greatest;
+		if (number1 > number2) {
+			greater = number1;
+		} else {
+			greater = number2;
+		}
+		if (greater > number3) {
+			greatest = greater;
+		} else {
+			greatest = number3;
+		}
+		return greatest;
+		}
+		function initialksp4() {
+		ksp4col1title.style.height = "auto";
+		ksp4col2title.style.height = "auto";
+		ksp4col3title.style.height = "auto";
+		ksp4col1p.style.height = "auto";
+		ksp4col2p.style.height = "auto";
+		ksp4col3p.style.height = "auto";
+		}
+		var ksp4titleheight, ksp4pheight;
+		function getheightksp4() {
+		ksp4titleheight = greatestof2(
+			ksp4col1title.clientHeight,
+			ksp4col2title.clientHeight,
+			ksp4col3title.clientHeight
+		);
+		ksp4pheight = greatestof2(
+			ksp4col1p.clientHeight,
+			ksp4col2p.clientHeight,
+			ksp4col3p.clientHeight
+		);
+		}
+		function adjustheightksp4() {
+		ksp4col1title.style.height = ksp4titleheight + "px";
+		ksp4col2title.style.height = ksp4titleheight + "px";
+		ksp4col3title.style.height = ksp4titleheight + "px";
+		ksp4col1p.style.height = ksp4pheight + "px";
+		ksp4col2p.style.height = ksp4pheight + "px";
+		ksp4col3p.style.height = ksp4pheight + "px";
+		}
+		initialksp4();
+		if (document.documentElement.clientWidth > 768) {
+		getheightksp4();
+		adjustheightksp4();
+		}
+		window.onresize = function () {
+		if (document.documentElement.clientWidth > 768) {
+			initialksp4();
+			getheightksp4();
+			adjustheightksp4();
+		} else {
+			initialksp4();
+		}
+		};

@@ -2,7 +2,6 @@
 	"fonts": [
 		"src/fonts/**"
 	],
-
 	"js": [
 		"vendors/js/html5.js",
 		"vendors/js/jquery-3.3.1.min.js",
@@ -15,7 +14,6 @@
 		"vendors/js/jquery.ui.touch-punch.min.js",
 		"vendors/js/zcommon.min.js"
 	],
-
 	"css": [
 		"vendors/css/flexslider.css",
 		"vendors/css/grid.css",

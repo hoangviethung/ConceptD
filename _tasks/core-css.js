@@ -15,21 +15,21 @@ const cssCore = () => {
 	})
 		.pipe(sourcemap.init())
 		.pipe(concat('core.min.css'))
-		.pipe(
-			postcss([
-				autoprefixer({
-					cascade: false,
-				}),
-				cssSort({
-					order: 'smacss',
-				}),
-			])
-		)
-		.pipe(
-			clean({
-				compatibility: 'ie8',
-			})
-		)
+		// .pipe(
+		// 	postcss([
+		// 		autoprefixer({
+		// 			cascade: false,
+		// 		}),
+		// 		cssSort({
+		// 			order: 'smacss',
+		// 		}),
+		// 	])
+		// )
+		// .pipe(
+		// 	clean({
+		// 		compatibility: 'ie8',
+		// 	})
+		// )
 		.pipe(sourcemap.write('.'))
 		.pipe(dest('_dist/css'))
 }

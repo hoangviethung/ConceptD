@@ -11,6 +11,8 @@ html(lang="en")
 		link(rel="stylesheet", href="./css/core.min.css")
 		link(rel="stylesheet", href="./css/main.min.css")
 		link(href='https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext,greek,latin-ext,vietnamese', rel='stylesheet')
+		script(type="text/javascript", src="./js/core.min.js")
+		script(type="text/javascript", src="./js/main.min.js")
 	body
 		.localization(style='display:none', data-countryisocode='VN', data-mm-res='//static.acer.com/', data-languageisocode='vi', data-acnt='https://www.acer.com/hub')
 		h1.ht Acer Conceptd
@@ -36,6 +38,4 @@ html(lang="en")
 				#js-page-verify(class=bodyClass hidden)
 			block footer
 				include _footer.pug
-		script(type="text/javascript", src="./js/core.min.js")
-		script(type="text/javascript", src="./js/main.min.js")
 		block scripts

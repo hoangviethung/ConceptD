@@ -13,8 +13,8 @@ const jsCore = () => {
 	})
 		.pipe(sourcemap.init())
 		.pipe(concat('core.min.js'))
-		.pipe(strip())
-		.pipe(uglify())
+		// .pipe(strip())
+		// .pipe(uglify())
 		.pipe(sourcemap.write('.'))
 		.pipe(dest('_dist/js'))
 }

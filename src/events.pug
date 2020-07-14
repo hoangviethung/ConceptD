@@ -1,0 +1,11 @@
+extends _templates/_layout/_layout.pug
+
+block var
+	- let title = 'Events';
+	- let bodyClass = 'events-page';
+
+block loading
+block banner,breadcrumb
+block main
+	include _templates/events/e-1
+block scripts

@@ -1,36 +1,37 @@
-#chunk_841613.ghei_chunk
+.ghei_chunk
 	div
 	div
-		.container.max-width-d.margin-top-m.margin-bottom-0
+		.container.bg-white
 			style.
-				#cdhb-partnerships {
-				background-image: url(./assets/images/index/cdhb-partnerships-small.jpg);
-				background-position: 65% 50%;
-				background-size: cover;
-				height: 150px;
+				#cdhb-adobeoffer {
+				background-image: url(./assets/images/index/adobe-creative-cloud-offer-homebanner-large.jpg);
+				background-position: 50% 60%;
+				height: 225px;
 				margin: 0;
 				width: 100%;
 				}
-				#cdhb-partnerships .bannertext {
-				padding: 1rem 2rem;
-				width: 80%;
+				#cdhb-adobeoffer .cdh-paddedblock {
+				width: 100%;
 				}
 				@media (min-width: 640px) {
-				#cdhb-partnerships {
-				background-image: url(./assets/images/index/cdhb-partnerships-large.jpg);
-				background-position: 50% 50%;
-				justify-content: flex-end;
-				}
-				#cdhb-partnerships .bannertext {
-				width: 50%;
+				#cdhb-adobeoffer .cdh-paddedblock {
+				width: calc(35.7142857143vw + 225.7142857143px); /* from 500px at 768px to 740px at 1440px */
 				}
 				}
-			.row.gutter-half.-flex
-				.col.a-12.gutter-half.-flex
-					a#cdhb-partnerships.no-underline.-flex.-ai-c(href='no/NO/content/conceptd-partnerships')
-						.bannertext
-							p.fs-2.text-secondary-dark.bold
-								span#placeholder_714157.ghei_placeholder ConceptD-partnere innen skole og industri
-							.fs-0.text-primary-orange
-								span.ghei_appMessage(id='appMessage_Learn More') Mer
-								|  >
+				@media (min-width: 1440px) {
+				#cdhb-adobeoffer .cdh-paddedblock {
+				width: 740px;
+				}
+				}
+			.container.max-width-d
+				.row.padding-left-xs.padding-right-xs.-flex
+					.col.a-12.padding-xs.-flex
+						a#cdhb-adobeoffer.no-underline.-flex.-ai-c(href='vi/VN/content/conceptd-offers-adobe-creative-cloud')
+							.cdh-paddedblock
+								p
+									img(src='./assets/images/index/adobe-creative-cloud-logo-48x48.png')
+								p.fs-2.text-secondary-dark.bold
+									span#placeholder_620611.ghei_placeholder 3 Months Complimentary Adobe Creative Cloud Membership
+								p.fs-0.text-primary-orange
+									span.ghei_appMessage(id='appMessage_Learn More') Learn more
+									|  ›

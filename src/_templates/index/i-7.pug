@@ -1,32 +1,36 @@
-.ghei_chunk
+#chunk_755270.ghei_chunk
 	div
 	div
-		.container.max-width-d.margin-top-m.margin-bottom-0
+		.container.bg-white
 			style.
-				#cdhb-adobe-offer {
-				align-items: center;
-				background-image: url(./assets/images/index/adobe-creative-cloud-offer-homebanner-gray2.jpg);
-				background-position: 50% 60%;
-				display: flex;
+				#cdhb-greenpackaging {
+				background-image: url(//static.acer.com/up/Resource/Acer/conceptD/greener-packaging/20200305/greenpackaging-homebanner-small.jpg);
+				background-position: 75% 50%;
+				background-size: cover;
 				height: 150px;
 				margin: 0;
 				width: 100%;
 				}
-				#cdhb-adobe-offer .bannertext {
-				padding: 1rem 2rem;
-				width: 100%;
+				#cdhb-greenpackaging .cdh-paddedblock {
+				width: 80%;
 				}
 				@media (min-width: 640px) {
-				#cdhb-adobe-offer .bannertext {
-				width: calc(35.7142857143vw + 225.7142857143px); /* from 500px at 768px to 740px at 1440px */
+				#cdhb-greenpackaging {
+				background-image: url(//static.acer.com/up/Resource/Acer/conceptD/greener-packaging/20200305/greenpackaging-homebanner-large.jpg);
+				background-position: 13% 50%;
+				justify-content: flex-end;
+				}
+				#cdhb-greenpackaging .cdh-paddedblock {
+				width: 50%;
 				}
 				}
-			.row.gutter-half.flex-view
-				.col.a-12.gutter-half.flex-view
-					a#cdhb-adobe-offer.no-underline(href='#')
-						.bannertext
-							p.fs-2.text-secondary-dark.bold
-								span#placeholder_620611.ghei_placeholder Gratis medlemskap i tre måneder i Adobe Creative Cloud
-							.fs-0.text-primary-orange
-								span.ghei_appMessage(id='appMessage_Learn More') Mer
-								|  >
+			.container.max-width-d
+				.row.padding-left-xs.padding-right-xs.-flex
+					.col.a-12.padding-xs.-flex
+						a#cdhb-greenpackaging.no-underline.-flex.-ai-c(href='vi/VN/content/conceptd-green-packaging')
+							.cdh-paddedblock
+								p.fs-2.text-secondary-dark.bold
+									span#placeholder_623188.ghei_placeholder ConceptD Green Packaging
+								p.fs-0.text-primary-orange
+									span.ghei_appMessage(id='appMessage_Learn More') Learn more
+									|  ›

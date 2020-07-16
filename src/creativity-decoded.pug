@@ -1,0 +1,14 @@
+extends _templates/_layout/_layout.pug
+
+block var
+	- let title = 'Creativity Decoded';
+	- let bodyClass = 'creativity-decoded-page';
+
+block loading
+block banner,breadcrumb
+block main
+	.newStyle
+		.row.container.max-width-e
+			// SECTION 1
+			include _templates/creativity-decoded/c-1
+block scripts
